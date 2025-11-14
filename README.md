@@ -57,3 +57,49 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+# Laravel To-Do App Documentation
+
+## Features
+- Create a new to-do item
+- View the list of to-do items
+- Update existing to-do items
+- Delete to-do items
+- Mark items as completed or pending
+
+## Design & Layout
+- Basic but user-friendly interface
+- Uses Blade templates for views
+
+## Data Storage
+- Laravel Migrations
+- Eloquent ORM
+
+## Additional Notes
+- Validation for form inputs
+- Simple error handling
+- Functional locally
+
+## Installation Steps
+1. Clone the project
+2. Run `composer install`
+3. Copy `.env.example` to `.env`
+4. Configure database
+5. Run `php artisan key:generate`
+6. Run `php artisan migrate`
+7. Start server using `php artisan serve`
+
+## Routes
+- GET / → List todos
+- GET /todos/create → Create page
+- POST /todos → Store todo
+- GET /todos/{id}/edit → Edit todo
+- PUT /todos/{id} → Update todo
+- DELETE /todos/{id} → Delete todo
+- PATCH /todos/{id}/toggle → Toggle status
+
+
+
+
